@@ -9,7 +9,7 @@ dl, dd, ol, ul, figure {
 }
 
 body {
-    font-family: 'Helvetica', Arial, sans-serif;
+    font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
     color: $body-color;
     line-height: 1.6;
     font-weight: 300;
@@ -101,13 +101,6 @@ pre {
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(800px - (#{$spacing-unit}));
-        max-width:         calc(800px - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
 }
 
 %clearfix {

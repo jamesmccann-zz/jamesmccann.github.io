@@ -4,11 +4,11 @@ header.main {
   color: $white;
   padding: 15px 15px 0px 15px;
   @include flexbox;
-  @include align-items(center);
-  @include justify-content(center);
   @include flex-direction(column);
 
   .avatar {
+    min-width: 120px;
+    min-height: 120px;
     border-radius: 100%;
     border: 2px solid $white;
   }
@@ -18,11 +18,32 @@ header.main {
   }
 
   .intro {
+    max-width: 420px;
     font-size: 0.8em;
   }
 
   a, a:visited {
     color: $white;
     &:hover { color: darken($white, 25%) }
+  }
+
+
+}
+
+@media screen and (min-width: $break-mobile) {
+  header.main {
+    @include align-items(center);
+    width: 250px;
+    height: 100%;
+    padding-top: 75px;
+    background-image: url('/images/sidebar.jpg');
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: $break-mobile) {
+  header.main {
+    @include align-items(center);
+    @include justify-content(center);
   }
 }
