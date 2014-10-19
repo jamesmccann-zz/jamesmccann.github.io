@@ -1,14 +1,12 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: James McCann | Software Developer
+email: jmccnz@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  James McCann, software developer based in Wellington, New Zealand.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "jamesmccann.nz" # the base hostname & protocol for your site
+twitter_username: jmccnz
+github_username:  jamesmccann
 
 # Build settings
 markdown: kramdown
