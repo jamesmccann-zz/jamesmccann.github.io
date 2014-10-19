@@ -8,63 +8,18 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
-/**
- * Basic styling
- */
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
+    font-family: 'Helvetica', Arial, sans-serif;
+    color: $body-color;
+    line-height: 1.6;
     font-weight: 300;
-    color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
 
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
-}
-
-
-
-/**
- * Images
- */
 img {
     max-width: 100%;
     vertical-align: middle;
-}
-
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
-}
-
-figcaption {
-    font-size: $small-font-size;
-}
-
-
-
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
 }
 
 li {
@@ -74,42 +29,37 @@ li {
     }
 }
 
-
-
-/**
- * Headings
- */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
 }
 
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
 
+p {
+  margin-bottom: 1em;
+}
 
-/**
- * Links
- */
 a {
-    color: $brand-color;
+    color: $body-color;
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: darken($body-color, 15%);
     }
 
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        color: ligten($body-color, 15%);
     }
 }
 
-
-
-/**
- * Blockquotes
- */
 blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    color: $grey;
+    border-left: 4px solid $light-grey;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
@@ -120,15 +70,10 @@ blockquote {
     }
 }
 
-
-
-/**
- * Code formatting
- */
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
+    border: 1px solid $light-grey;
     border-radius: 3px;
     background-color: #eef;
 }
@@ -148,11 +93,6 @@ pre {
     }
 }
 
-
-
-/**
- * Wrapper
- */
 .wrapper {
     max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
     max-width:         calc(800px - (#{$spacing-unit} * 2));
@@ -170,13 +110,7 @@ pre {
     }
 }
 
-
-
-/**
- * Clearfix
- */
 %clearfix {
-
     &:after {
         content: "";
         display: table;
@@ -184,11 +118,6 @@ pre {
     }
 }
 
-
-
-/**
- * Icons
- */
 .icon {
 
     > svg {
@@ -198,7 +127,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $grey;
         }
     }
 }

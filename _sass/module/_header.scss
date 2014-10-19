@@ -1,0 +1,28 @@
+header.main {
+  width: 100%;
+  background-image: url('/images/header-bg.png');
+  color: $white;
+  padding: 15px 15px 0px 15px;
+  @include flexbox;
+  @include align-items(center);
+  @include justify-content(center);
+  @include flex-direction(column);
+
+  .avatar {
+    border-radius: 100%;
+    border: 2px solid $white;
+  }
+
+  .name {
+    margin-top: 15px;
+  }
+
+  .intro {
+    font-size: 0.8em;
+  }
+
+  a, a:visited {
+    color: $white;
+    &:hover { color: darken($white, 25%) }
+  }
+}
