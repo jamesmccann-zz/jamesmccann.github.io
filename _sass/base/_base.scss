@@ -31,6 +31,7 @@ li {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
+    line-height: 1.25;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -45,12 +46,8 @@ p {
 }
 
 a {
-    color: $body-color;
+    color: $link-color;
     text-decoration: none;
-
-    &:visited {
-        color: darken($body-color, 15%);
-    }
 
     &:hover {
         color: lighten($body-color, 15%);

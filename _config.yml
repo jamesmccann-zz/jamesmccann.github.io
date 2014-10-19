@@ -5,8 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   James McCann, software developer based in Wellington, New Zealand.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "jamesmccann.nz" # the base hostname & protocol for your site
-twitter_username: jmccnz
-github_username:  jamesmccann
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+highlighter: true

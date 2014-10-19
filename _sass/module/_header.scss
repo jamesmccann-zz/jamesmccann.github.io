@@ -35,6 +35,7 @@ header.main {
     @include align-items(center);
     width: 250px;
     height: 100%;
+    position: fixed;
     padding-top: 75px;
     background-image: url('/images/sidebar.jpg');
     background-size: cover;

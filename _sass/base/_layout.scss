@@ -1,6 +1,6 @@
 body {
   @include flexbox;
-  @include flex-direction(row);
+  @include flex-direction(column);
 }
 
 main {
@@ -15,8 +15,12 @@ ul.post-list {
   }
 }
 
-@media screen and (max-width: $break-mobile) {
+@media screen and (min-width: $break-mobile) {
   body {
-    @include flex-direction(column);
+    @include flex-direction(row);
+  }
+
+  main {
+    margin-left: 250px;
   }
 }
