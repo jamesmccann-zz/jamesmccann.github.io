@@ -164,6 +164,7 @@ level.
 If you want to take a look at the code I used to make this post, I've
 put it up on [Github](https://github.com/jamesmccann/card-view-pager-example)
 
+Cheers to [Benjamin Roesner](http://drbl.in/gGzR) for the Nexus template!
 
 
 
