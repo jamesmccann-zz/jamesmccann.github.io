@@ -8,7 +8,7 @@ Rails Asset Pipeline can work together with ES6 modules. To keep it
 simple, I decided to try and work with the bare minimum Rails and Webpack setup skip
 some of the additional work that Justin has described around implementing the Webpack dev server and using ES6 modules.
 
-Over the past few years using Gemified libraries has emerged and become
+Over the past few years using Gemified assets has and become
 the de facto solution for including JavaScript and CSS modules in a
 Rails application. This solution is simple and the usage is elegant from the
 perspective of the Rails developer, all you need to do is specify the
