@@ -63,7 +63,7 @@ demo `package.json` for reference:
 At the moment we have no dependencies in the package, but this will
 change shortly. I'm going to build this demo out using React, so we'll
 need to install that via NPM. It would be nice to use JSX as well, so
-I'll install the Webpack [jsx-loader](https://www.npmjs.org/package/jsx-loader) as a development dependency.
+I'll install the Webpack [jsx-loader](https://www.npmjs.org/package/jsx-loader) as a development dependency:
 
 ```
 npm install react --save
@@ -85,7 +85,7 @@ detail on the format of this file as others on the web can do a far
 better job than I can, but the key takeaway here is that we are telling
 Webpack to do it's thing and then output the bundled JS to
 `app/assets/javascripts/bundle.js` so we can include it into our JS
-manifest via Sprockets.
+manifest via Sprockets. Here is my config file:
 
 ```
 var path = require('path');
@@ -110,7 +110,7 @@ module.exports = {
 ```
 
 In the new javascripts directory add a file called app.jsx (I've used
-the React "Hello World" example).
+the React "Hello World" example):
 
 ```
 /** @jsx React.DOM */
@@ -147,7 +147,7 @@ the bundled JavaScript, this should look pretty familiar:
 //= require bundle.js
 ```
 
-And now, running `rails s` should give us what we are looking for.
+And now, running `rails s` should give us what we are looking for:
 
 ![Hello World](/images/2014/11/28/react-rails.png)
 
