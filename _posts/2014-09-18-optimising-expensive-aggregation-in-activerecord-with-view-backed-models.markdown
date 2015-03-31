@@ -98,8 +98,6 @@ As you will notice from the log above, this only solves half of our problem. We 
 
 Continuing with our example above - our goal is to make a view that calculates "all of the account balances for all of the accounts for all of our customers". In SQL, this can be achieved as follows:
 
-<<< discuss aggregation
-
 ```
 CREATE VIEW account_balances AS (
   SELECT
