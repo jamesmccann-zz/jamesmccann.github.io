@@ -32,7 +32,7 @@ of detail as far as how Webpack works and the motiviations for using it,
 but Pete Hunt has an excellent [how-to](https://github.com/petehunt/webpack-howto) that is worth reading. To get started, Webpack needs to be
 installed globally in your environment:
 
-```shell
+```sh
 npm install webpack -g
 ```
 

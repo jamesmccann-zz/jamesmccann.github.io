@@ -4,11 +4,13 @@ $white: #FFFFFF;
 $background-color: #fdfdfd;
 
 $grey:       #828282;
-$light-grey: lighten($grey, 20%);
+$light-grey: lighten($grey, 10%);
 $dark-grey:  darken($grey, 25%);
+
+$orange: #DD973C;
 
 $body-color: $dark-grey;
 $body-strong-color: $black;
 
-$link-color: $light-grey;
+$link-color: $orange;
 $link-color-active: $dark-grey;
