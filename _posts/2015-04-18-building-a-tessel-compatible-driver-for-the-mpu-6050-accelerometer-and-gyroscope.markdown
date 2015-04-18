@@ -38,8 +38,7 @@ to connect two of the boards to the same I2C bus.
 ![GY-521 Wiring Diagram](/images/2015/04/18/gy521-wiring-diagram.png)
 
 Communicating with the MPU-6050 over I2C is basically a case of reading
-and writing bytes to and from a set of registers on the device. Using
-the I2C library provided by the Tessel. Here is an example of reading
+and writing bytes to and from a set of registers on the device. Here is an example of reading
 the `WHO_AM_I` register from the MPU-6050 using Tessel's I2C library.
 The response from reading this register will hopefully be a byte with
 the value 68 or 69 depending on whether or not you have pulled the AD0
@@ -89,7 +88,7 @@ mpu6050.on('ready', function() {
 });
 ```
 
-The driver library itself was inspired by the excellent work of the core
+The driver library I've implemented was inspired by the excellent work of the core
 Tessel team on other drivers for the official Tessel modules. I would
 recommend having a read over the driver for the accelerometer chip, see [accel-mma84](https://github.com/tessel/accel-mma84) on Github.
 
