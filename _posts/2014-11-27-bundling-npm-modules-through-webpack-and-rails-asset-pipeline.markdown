@@ -105,8 +105,8 @@ module.exports = {
     loaders: [
       { test: /\.jsx$/, loader: 'jsx-loader' },
     ]
-
-  }}
+  }
+}
 ```
 
 In the new javascripts directory add a file called app.jsx (I've used
@@ -118,7 +118,6 @@ the React "Hello World" example):
 var React = require('react');
 
 document.addEventListener('DOMContentLoaded', function() {
-
   React.render(
     <h1>Hello, world!</h1>,
     document.body
