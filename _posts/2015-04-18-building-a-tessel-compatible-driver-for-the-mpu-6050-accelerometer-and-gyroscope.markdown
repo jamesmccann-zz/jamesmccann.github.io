@@ -42,7 +42,7 @@ and writing bytes to and from a set of registers on the device. Here is an examp
 the `WHO_AM_I` register from the MPU-6050 using Tessel's I2C library.
 The response from reading this register will hopefully be a byte with
 the value 68 or 69 depending on whether or not you have pulled the AD0
-chip high.
+pin high.
 
 index.js:
 
