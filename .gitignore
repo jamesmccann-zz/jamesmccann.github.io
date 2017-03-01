@@ -2,3 +2,4 @@ _site
 .sass-cache
 notes/
 .ruby-version
+vendor/
