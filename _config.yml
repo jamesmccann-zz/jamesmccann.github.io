@@ -8,4 +8,5 @@ url: "jamesmccann.nz" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
-highlighter: 'pygments'
+kramdown:
+  syntax_highlighter: rogue
