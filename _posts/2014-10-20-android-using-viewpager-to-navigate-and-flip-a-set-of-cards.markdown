@@ -16,7 +16,7 @@ dynamically replace any Fragments through the `ViewPager` directly.
 Right lets have a look at some code, here's how I have setup the main
 `Activity` and adapter:
 
-```
+{% highlight java %}
 public class CardsActivity extends Activity {
 
     @Override
@@ -47,7 +47,7 @@ public class CardsActivity extends Activity {
         }
     }
 }
-```
+{% endhighlight %}
 
 Pretty simple so far, we've got an `Activity` to hold onto all of our
 cards, a `ViewPager` within this to handle swiping back and forth between
@@ -58,7 +58,7 @@ As the name suggests, the `CardContainerFragment` class is just going to
 act as a wrapper for our front and back fragments, so we can go ahead
 and set this up with a `FrameLayout` to hold these:
 
-```
+{% highlight java %}
 public class CardContainerFragment extends Fragment {
 
     private boolean cardFlipped = false;
@@ -99,14 +99,14 @@ public class CardContainerFragment extends Fragment {
         }
     }
 }
-```
+{% endhighlight %}
 
 You can see I've also added a `Menu` here which just holds a button to
 trigger the card flipping. I'm also using a boolean flag on each
 instance to determine whether the card is in the "flipped" state or not.
 The layout for this fragment is similarly pretty simple:
 
-```
+{% highlight xml %}
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -117,11 +117,11 @@ The layout for this fragment is similarly pretty simple:
         android:layout_height="match_parent"></FrameLayout>
 
 </LinearLayout>
-```
+{% endhighlight %}
 
 All that's left to do is implement `flipCard()`:
 
-```
+{% highlight java %}
 public void flipCard() {
     Fragment newFragment;
     if (cardFlipped) {
@@ -142,13 +142,13 @@ public void flipCard() {
 
     cardFlipped = !cardFlipped;
 }
-```
+{% endhighlight %}
 
 Here we are using the child `FragmentManager` provided by the container,
 so all the logic of managing the front and back fragments is nicely
 encapsulated within the `CardContainerFragment`. I've also added the
 flip animation here, there is some official documentation on how to
-achieve this [here](http://developer.android.com/training/animation/cardflip.html).
+achieve this [here](http://developer.android.com/training/animation/cardflip.html){:.link.dim.blue}.
 
 And here is the final result:
 
@@ -162,9 +162,9 @@ complex behaviour for switching the current fragment at the adapter
 level.
 
 If you want to take a look at the code I used to make this post, I've
-put it up on [Github](https://github.com/jamesmccann/card-view-pager-example)
+put it up on [Github](https://github.com/jamesmccann/card-view-pager-example){:.link.dim.blue}
 
-Cheers to [Benjamin Roesner](http://drbl.in/gGzR) for the Nexus template!
+Cheers to [Benjamin Roesner](http://drbl.in/gGzR){:.link.dim.blue} for the Nexus template!
 
 
 

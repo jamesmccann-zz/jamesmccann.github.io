@@ -2,14 +2,16 @@
 layout: default
 ---
 
-<ul class="post-list">
+<ul class="posts-list list pl0">
   {% for post in site.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <li class="post flex flex-column flex-row-ns lh-copy pv2">
+      <div class="w-20-ns mr3">
+        <label class="post-meta f5 fw6">{{ post.date | date: "%b %-d, %Y" }}</label>
+      </div>
 
-      <h2>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h2>
+      <div class="w-70-ns">
+        <a class="link dim blue" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </div>
     </li>
   {% endfor %}
 </ul>

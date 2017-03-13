@@ -1,15 +1,25 @@
----
-layout: default
----
-<div class="post">
+<!DOCTYPE html>
+<html>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+{% include head.html %}
 
-  <article class="post-content">
-    {{ content }}
+<body class="w-100 sans-serif">
+
+  {% include header-sm.html %}
+
+  <article class="pa4 w-100 w-70-ns center dark-gray">
+    <h1 class="f2 fw6 lh-title">{{ page.title }}</h1>
+    <p class="post-meta f5 fw6 lh-copy">
+      {{ page.date | date: "%b %-d, %Y" }}
+    </p>
+
+    <div class="post-content mv5">
+      {{ content }}
+    </div>
   </article>
 
-</div>
+  {% include footer.html %}
+
+</body>
+
+</html>
