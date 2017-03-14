@@ -150,4 +150,4 @@ hybrid SPA - we've got server side routing to separate React client-side SPA's.
 - Back-end: Rails 5, CRUD views are standard Rails with isolated React components where required, Rails controllers for the admin, [Grape](https://github.com/ruby-grape/grape){:.link.dim.blue} for API endpoints, JWT authentication for the API endpoints,
 [Tachyons](http://tachyons.io/){:.link.dim.blue} for CSS (virtually no other custom CSS!), [PostGIS](http://www.postgis.net/){:.link.dim.blue} for mapping addresses into geofenced network boundaries, "use case" architecture for most actions.
 
-I've love to hear from you if any of the above was interesting and you would like to discuss more about it or similar experiences you've had! Please shout me out on [Twitter](https://twitter.com/jmccnz){:.link.dim.blue} or flick me an [email](mailto:jmccnz@gmail.com){:.link.dim.blue}.
+I'd love to hear from you if any of the above was interesting and you would like to discuss more about it or similar experiences you've had! Please shout me out on [Twitter](https://twitter.com/jmccnz){:.link.dim.blue} or flick me an [email](mailto:jmccnz@gmail.com){:.link.dim.blue}.
