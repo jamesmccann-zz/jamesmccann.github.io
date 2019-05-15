@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html>
-
 {% include head.html %}
+<body class="w-50 sans-serif">
+  {% include header.html %}
 
-<body class="w-100 sans-serif">
-
-  {% include header-sm.html %}
-
-  <article class="pa4 w-100 w-70-ns center dark-gray">
+  <article class="ph5 dark-gray georgia">
     <h1 class="f2 fw6 lh-title">{{ page.title }}</h1>
     <p class="post-meta f5 fw6 lh-copy">
       {{ page.date | date: "%b %-d, %Y" }}
@@ -19,7 +16,5 @@
   </article>
 
   {% include footer.html %}
-
 </body>
-
 </html>
