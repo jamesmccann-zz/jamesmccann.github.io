@@ -3,15 +3,32 @@
 
 {% include head.html %}
 
-<body class="w-75 sans-serif">
-  {% include header.html %}
+<body class="w-40-l ma3 ma5-l sans-serif">
+  <header>
+    <div class="mb4">
+      <p class="mb1">Hey 👋 I'm James</p>
+      <p class="ma0">
+        <span>Twitter <a class="link dim blue dib pr2" href="https://twitter.com/jmccnz">@jmccnz</a></span>
+        <span>GitHub <a class="link dim blue dib pr2" href="https://github.com/jamesmccann">@jamesmccann</a></span>
+      </p>
+    </div>
 
-  <main class="ph5 dark-gray georgia">
+    <img style="width: 460px" src="images/cover.jpg" />
+
+    <div class="mv4 lh-copy serif">
+      <p>I'm a software engineer from New Zealand, living and working in Amsterdam. I work on backend (mostly) and frontend projects typically using Golang, Ruby, and NodeJS.</p>
+      <p>I believe primarily in readable software, intention-revealing interfaces, domain-driven design, and choosing abstractions and tools that suit the problems you have at hand.</p>
+      <p>I'm also interested in transportation, livable cities, and the transformative power that cycling has on the quality of life in urban environments.</p>
+      <p>I'm currently working with <a class="link dim blue" href="https://www.messagebird.com">MessageBird</a> in Amsterdam. In the past I have worked with <a class="link dim blue" href="https://consumer.org.nz">Consumer New Zealand</a> and <a class="link dim blue" href="https://ikegps.com">ikeGPS</a>.</p>
+      <p><strong>I'm currently open for work in Amsterdam (or remote) starting August.</strong></p>
+    </div>
+  </header>
+
+  <main class="dark-gray serif">
+    <h3>Posts that I occassionally write...</h3>
     {{ content }}
   </main>
 
   {% include footer.html %}
-
 </body>
-
 </html>

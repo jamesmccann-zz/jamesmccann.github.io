@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
 {% include head.html %}
-<body class="w-50 sans-serif">
-  {% include header.html %}
+<body class="w-40-l ma3 ma5-l serif">
+  <header>
+    <nav>
+      <a class="link blue" href="/">⟵ back to home</a>
+    </nav>
+  </header>
 
-  <article class="ph5 dark-gray georgia">
+  <article class="dark-gray lh-copy">
     <h1 class="f2 fw6 lh-title">{{ page.title }}</h1>
-    <p class="post-meta f5 fw6 lh-copy">
+    <p class="post-meta f5 fw6">
       {{ page.date | date: "%b %-d, %Y" }}
     </p>
 
-    <div class="post-content mv5">
+    <div class="post-content">
       {{ content }}
     </div>
   </article>

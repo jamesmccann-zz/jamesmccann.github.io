@@ -3,8 +3,8 @@ layout: post
 title: Rebuilding Powerswitch
 ---
 
-<div class="mv3">
-  <figure>
+<div class="w-100 mv3">
+  <figure class="ma0">
     <a href="/images/2017/03/03/powerswitch-rebuild-header.png">
       <img class="mb2" src="/images/2017/03/03/powerswitch-rebuild-header.png" alt="Powerswitch as it was in August 2016, Powerswitch in February 2017." />
     </a>
@@ -65,7 +65,7 @@ We've reduced a lot of complexity by deferring new work for as long as possible,
 We replaced the old powerswitch.org.nz Rails app with a new NodeJS web app and a React client frontend.
 
 <div class="mv3">
-  <figure>
+  <figure class="ma0">
     <a href="/images/2017/03/03/powerswitch-results-trends.png">
       <img class="mb2" src="/images/2017/03/03/powerswitch-results-trends.png" alt="Powerswitch results and trends pages in 2017." />
     </a>
@@ -109,7 +109,7 @@ Our API we provide to the front-end only uses the published plans, and it's amaz
 ### Publishing and Managing Revisions
 
 <div class="mv3">
-  <figure>
+  <figure class="ma0">
     <a href="/images/2017/03/03/powerswitch-revision-sets.png">
       <img class="mb2" src="/images/2017/03/03/powerswitch-revision-sets.png" alt="Editing revision sets in the Powerswitch Admin app." />
     </a>
