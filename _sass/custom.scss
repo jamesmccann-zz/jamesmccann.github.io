@@ -1,1 +1,15 @@
 figure.highlight { overflow-x: scroll; }
+
+body.millenial {
+  background-color: rgb(220, 176, 155) !important;
+  color: rgb(53, 67, 113) !important;
+}
+
+body.toulouse {
+  background-color: rgb(218, 117, 100) !important;
+  color: rgb(229, 211, 205) !important;
+
+  a {
+    color: rgb(239, 236, 241) !important;
+  }
+}
